@@ -5,7 +5,6 @@ export const fetchQuote = createAsyncThunk("quote/fetchRandom", async () => {
   const response = await axios.get(
     `https://corsproxy.io/?https://zenquotes.io/api/random?t=${new Date().getTime()}`
   );
-  console.log("API Response:", response.data);
   return response.data[0];
 });
 

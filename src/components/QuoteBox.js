@@ -17,7 +17,7 @@ const QuoteBox = () => {
   };
 
   return (
-    <div id="quote-box" className="d-flex flex-column text-center p-4">
+    <section id="quote-box" className="d-flex flex-column text-center p-4">
       {status === "loading" ? (
         <Spinner
           animation="border"
@@ -56,7 +56,7 @@ const QuoteBox = () => {
           <span className="bi bi-twitter-x "> Tweet Quote</span>
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 
