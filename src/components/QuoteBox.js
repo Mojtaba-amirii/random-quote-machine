@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchQuote } from "../redux/quoteSlice";
 import { Button, Spinner } from "react-bootstrap";
+
+import { fetchQuote } from "../redux/quoteSlice";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 const QuoteBox = () => {
@@ -25,7 +26,7 @@ const QuoteBox = () => {
           className=" text-center"
         />
       ) : status === "failed" ? (
-        <p>Error fetching quote: {error}</p>
+        <p className=" text-danger">Error fetching quote: {error}</p>
       ) : (
         <>
           <blockquote id="text">
