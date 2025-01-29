@@ -5,7 +5,10 @@ import "./styles/App.css";
 
 function App() {
   return (
-    <main className="App d-flex justify-content-center align-items-center min-vh-100">
+    <main
+      data-testid="quote-box"
+      className="App d-flex justify-content-center align-items-center min-vh-100"
+    >
       <QuoteBox />
     </main>
   );
