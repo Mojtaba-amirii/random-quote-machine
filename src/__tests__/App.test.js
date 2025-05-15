@@ -1,10 +1,10 @@
-import React from "react";
-import { render, screen } from "@testing-library/react";
-import App from "../App";
 import axios from "axios";
-import store from "../redux/store";
-import { Provider } from "react-redux";
 import { jest } from "@jest/globals";
+import { Provider } from "react-redux";
+import { render, screen } from "@testing-library/react";
+
+import App from "../App";
+import store from "../redux/store";
 
 jest.mock("axios");
 

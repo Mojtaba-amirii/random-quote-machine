@@ -1,7 +1,6 @@
-import React from "react";
+import "./styles/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import QuoteBox from "./components/QuoteBox";
-import "./styles/App.css";
 
 function App() {
   return (

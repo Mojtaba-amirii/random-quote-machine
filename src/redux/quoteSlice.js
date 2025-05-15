@@ -1,5 +1,5 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const fetchQuote = createAsyncThunk("quote/fetchRandom", async () => {
   const response = await axios.get(

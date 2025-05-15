@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
 import { Button, Spinner } from "react-bootstrap";
+import { useSelector, useDispatch } from "react-redux";
 
 import { fetchQuote } from "../redux/quoteSlice";
 import "bootstrap-icons/font/bootstrap-icons.css";
